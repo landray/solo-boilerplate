@@ -23,11 +23,6 @@ FastClick.attach(document.body)
 Vue.use(VueResource)
 Vue.use(Solo)
 
-{{#iskkjs}}
-// 初始化kk
-// kk.ready(() => {
-{{/iskkjs}}
-
 // 启动应用
 Solo.start({
   pages: Pages,
@@ -38,6 +33,3 @@ Solo.start({
   {{/iskkjs}}
 })
 
-{{#iskkjs}}
-// })
-{{/iskkjs}}
