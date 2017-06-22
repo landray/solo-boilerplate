@@ -36,9 +36,8 @@ Vue.use(Solo)
 Solo.start({
   pages: Pages,
   // 默认页面
-  enterPage: 'home'
-  {{#iskkjs}}
-  // kk: kk
+  enterPage: 'home'{{#iskkjs}},
+  kk
   {{/iskkjs}}
 })
 
