@@ -23,6 +23,15 @@ FastClick.attach(document.body)
 Vue.use(VueResource)
 Vue.use(Solo)
 
+// // 如果接口服务器只能处理 application/x-www-form-urlencoded 格式的请求数据，则需要将 emulateJSON 设置为 true
+// Vue.http.options.emulateJSON = true
+
+// // 对所有ajax请求进行统一设置
+// Vue.http.interceptors.push((request, next) => {
+//   next()
+// })
+
+
 // 启动应用
 Solo.start({
   pages: Pages,
