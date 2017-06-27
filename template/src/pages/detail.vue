@@ -12,12 +12,12 @@
     </page-footer>
     <page-content>
       <h1>i am detail page</h1>
-      <p>PageData is </p>
+      <p>viewData is </p>
       <group>
-        <cell title="标题" :value="pageData.data.title"></cell>
-        <cell title="作者" :value="pageData.data.author"></cell>
-        <cell title="频道" :value="pageData.data.channel"></cell>
-        <cell title="内容" :value="pageData.data.content"></cell>
+        <cell title="标题" :value="viewData.data.title"></cell>
+        <cell title="作者" :value="viewData.data.author"></cell>
+        <cell title="频道" :value="viewData.data.channel"></cell>
+        <cell title="内容" :value="viewData.data.content"></cell>
       </group>
     </page-content>
   </page>

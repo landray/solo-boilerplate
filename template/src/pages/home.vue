@@ -8,7 +8,7 @@
     </x-header>
     <div class="vux-demo">
       <h1>This is  channel</h1>
-      <p>PageData is </p>
+      <p>viewData is </p>
       <example></example>
       <button @click="onClickLoadToNew">to new</button>
     </div>
@@ -48,10 +48,10 @@ export default {
   },
   activated() {
     console.log('activated')
-    if (this.pageData && this.pageData.from === 'create') {
+    if (this.viewData && this.viewData.from === 'create') {
       console.log(this.news)
-      console.log(this.pageData.data)
-      this.news.push(this.pageData.data)
+      console.log(this.viewData.data)
+      this.news.push(this.viewData.data)
     }
   },
   deactivated() {
@@ -83,7 +83,7 @@ export default {
   },
   data() {
     return {
-      channel: this.pageData && this.pageData.name ? this.pageData.name : 'index',
+      channel: this.viewData && this.viewData.name ? this.viewData.name : 'index',
       news: [
         {
           title: 'hello world',
