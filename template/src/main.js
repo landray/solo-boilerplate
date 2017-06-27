@@ -5,6 +5,9 @@ import Vue from 'vue'
 import Solo from 'solojs'
 import 'solojs/solo.css'
 
+// 引入 vux 的 重置样式表
+import 'vux/src/styles/reset.less'
+
 {{#iskkjs}}
 // 引入kkjs
 import kk from 'kkjs'
